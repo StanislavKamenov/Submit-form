@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+body {
+    background: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+.submit {
+    margin: auto;
+    width: 20rem;
+    height: 18rem;
+    color: white;
+    border-radius: 15px;
+    background: #27374D;
+    margin-top: 20rem;
+    text-align: center; 
+
+}
+
+.submit p {
+    color: grey;
+}
+
+.button {
+    display: flex;
+    margin: auto;
+    width: 40%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 50px;
+    height: 20%;
+    transition: 2s;
+    box-shadow: 0 0 0 0 black;
+  }
+  
+  .button:hover {
+    background: #FFD700;
+    box-shadow: 0 0 10px 5px black;
+  }
+
+.star-voting {
+    direction: rtl;
+    display: inline-block;
+  }
+  
+  .star-voting input[type="radio"] {
+    display: none; 
+  }
+  
+  .star-voting label {
+    float: right;
+    padding: 0 15px;
+    margin-left: 0.2rem;
+    color: #888;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .star-voting label:before {
+    content: "\2605"; 
+  }
+  
+  .star-voting input[type="radio"]:checked ~ label {
+    color: #FFD700; 
+  }
